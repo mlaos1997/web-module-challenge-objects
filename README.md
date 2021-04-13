@@ -5,7 +5,7 @@
 ## Objectives
 
 - use objects to store and access data
-- learn to create methods on objects, and utilize the `this` keyword
+- learn to create methods on objects, and utilize the `this` keyword X
 
 ## Introduction
 
