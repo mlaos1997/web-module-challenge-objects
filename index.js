@@ -124,7 +124,7 @@ const reviews = [{
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
-
+console.log(reviews[5].feedback);
 
 
 
@@ -133,6 +133,18 @@ Using the reviews array above do the following: (no function needed)
   1. Following the same format (name, rating, feedback), add a new fictitious review object to the reviews array
   2. log the whole array to the console, make sure the new review is inside of it   
 */
+let newRating = {
+
+}
+newRating = {
+  name: 'Marcelo',
+  rating: 5,
+  feedback: "good stuff"
+};
+
+reviews.push(newRating);
+console.log(reviews);
+
 
 
 
@@ -141,7 +153,8 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   1. Add this feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
   2. log the reviews array to the console to check your work
 */
-
+reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
+console.log(reviews);
 
 
 
@@ -157,9 +170,11 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex( /*Your code here*/ ) {
+function getReviewByIndex(arr, num) {
   /*Your code here*/
-}
+  return `${arr[num].name} gave the restaurant a ${arr[num].rating} star review, and their feedback was: ${arr[num].feedback}`
+};
+console.log(getReviewByIndex(reviews, 0))
 
 
 
@@ -176,9 +191,12 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview( /*Your code here*/ ) {
+function getLastReview(arr) {
   /*Your code here*/
+  return arr[arr.length - 1];
 }
+
+console.log(getLastReview(reviews));
 
 
 
